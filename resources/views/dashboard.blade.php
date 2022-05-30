@@ -7,6 +7,7 @@
 
     <div class="container">
         <form action="/random" method="post">
+            @csrf
             <button class="btn btn-outline-secondary" type="submit" id="button-addon1">Button</button>
         </form>
     <form method="post" action="/dashboardsearch">
