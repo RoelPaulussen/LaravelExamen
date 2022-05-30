@@ -31,4 +31,5 @@ Route::get('/',[MovieController::class,'Showmovies']);
 Route::post('/search', [MovieController::class,'SearchGuest']);
 
 Route::post('/dashboardsearch',[MovieController::class,'SearchDash']);
-Route::post('/dashboard',[MovieController::class,'Favorite']);
+Route::post('/favorite',[MovieController::class,'Favorite']);
+Route::post('/random',[MovieController::class,'RandomMoviesDash']);

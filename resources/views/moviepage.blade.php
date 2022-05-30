@@ -13,7 +13,6 @@
                     <h5 class="card-title" name = "Title" value="{{$movie->Title}}">{{$movie->Title}}</h5>
                     <p class="card-text" name = "Year" value="{{$movie->Year}}">This movie came out in {{$movie->Year}}</p>
                     <p class="card-text"><small class="text-muted"></small></p>
-                    <button type="button" class="btn btn-outline-danger active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Favorite</button>
                 </div>
             </div>
         </div>
