@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Movies extends Model
+class Movie extends Model
 {
     use HasFactory;
-    
-    public function User() {
+    public $guarded = [];
+    public function user() {
         return $this->belongsToMany(User::class); 
     }
 }

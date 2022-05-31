@@ -10,6 +10,10 @@
 <body>
     <div class="container">
         <div class="row" id="Navbar">
+        <form action="/randomguest" method="post">
+            @csrf
+            <button class="btn btn-outline-secondary" type="submit" id="button-addon1">Random</button>
+        </form>
             
         <form method="post" action="/search">
         @csrf
@@ -17,7 +21,7 @@
        
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="" name="wanted">
-                    <button class="btn btn-outline-secondary" type="submit" id="button-addon1">Button</button>
+                    <button class="btn btn-outline-secondary" type="submit" id="button-addon1">Search</button>
                 </div>
             </div>
         </form> 
